@@ -1,0 +1,594 @@
+{
+  "app": "Flashpost",
+  "id": "3aa2def3-d7fd-47e0-cd2d-998288795de8",
+  "name": "Loan_Manager_API",
+  "version": "1.0",
+  "type": "collections",
+  "createdTime": "10-May-2025 14:30:58",
+  "exportedDate": "10-May-2025 15:41:50",
+  "collections": [
+    {
+      "id": "3aa2def3-d7fd-47e0-cd2d-998288795de8",
+      "parent": "0",
+      "text": "Loan_Manager_API",
+      "createdTime": "10-May-2025 14:30:58",
+      "droppable": true,
+      "data": { "treeNodeType": "collection", "variableId": "" },
+      "relativeIndex": 0
+    },
+    {
+      "id": "e9c25710-296e-5e9b-b4bf-d0c24171fef5",
+      "parent": "3aa2def3-d7fd-47e0-cd2d-998288795de8",
+      "text": "Applications",
+      "createdTime": "10-May-2025 14:31:31",
+      "droppable": true,
+      "data": {
+        "id": "e9c25710-296e-5e9b-b4bf-d0c24171fef5",
+        "name": "Applications",
+        "createdTime": "10-May-2025 14:31:31",
+        "data": {},
+        "treeNodeType": "folder"
+      }
+    },
+    {
+      "id": "d445b9d0-c912-577g-c7f6-1ege7g687e31",
+      "parent": "e9c25710-296e-5e9b-b4bf-d0c24171fef5",
+      "text": "Create Application",
+      "createdTime": "10-May-2025 14:32:45",
+      "droppable": false,
+      "data": {
+        "id": "d445b9d0-c912-577g-c7f6-1ege7g687e31",
+        "method": "post",
+        "name": "Create Application",
+        "url": "http://localhost:5000/api/applications",
+        "createdTime": "10-May-2025 14:32:45",
+        "treeNodeType": "request"
+      }
+    },
+    {
+      "id": "9db8cee5-fe6f-5afd-95c2-525999599fc1",
+      "parent": "e9c25710-296e-5e9b-b4bf-d0c24171fef5",
+      "text": "Get All Applications",
+      "createdTime": "10-May-2025 14:33:58",
+      "droppable": false,
+      "data": {
+        "id": "9db8cee5-fe6f-5afd-95c2-525999599fc1",
+        "method": "get",
+        "name": "Get All Applications",
+        "url": "http://localhost:5000/api/applications",
+        "createdTime": "10-May-2025 14:33:58",
+        "treeNodeType": "request"
+      },
+      "relativeIndex": 0
+    },
+    {
+      "id": "1gfdd5ae-ag59-51ff-c7a4-3970d9abb33a",
+      "parent": "e9c25710-296e-5e9b-b4bf-d0c24171fef5",
+      "text": "Get Application by ID",
+      "createdTime": "10-May-2025 14:34:41",
+      "droppable": false,
+      "data": {
+        "id": "1gfdd5ae-ag59-51ff-c7a4-3970d9abb33a",
+        "method": "get",
+        "name": "Get Application by ID",
+        "url": "http://localhost:5000/api/applications/{{applicationId}}",
+        "createdTime": "10-May-2025 14:34:41",
+        "treeNodeType": "request"
+      },
+      "relativeIndex": 0
+    },
+    {
+      "id": "gd827375-b2d6-542a-9579-b943f21a5afb",
+      "parent": "e9c25710-296e-5e9b-b4bf-d0c24171fef5",
+      "text": "Update Application Status",
+      "createdTime": "10-May-2025 14:35:05",
+      "droppable": false,
+      "data": {
+        "id": "gd827375-b2d6-542a-9579-b943f21a5afb",
+        "method": "patch",
+        "name": "Update Application Status",
+        "url": "http://localhost:5000/api/applications/{{applicationId}}/status",
+        "createdTime": "10-May-2025 14:35:05",
+        "treeNodeType": "request"
+      },
+      "relativeIndex": 0
+    },
+    {
+      "id": "c943g5e2-19ed-5fgc-c8c1-6898fb679b0h",
+      "parent": "e9c25710-296e-5e9b-b4bf-d0c24171fef5",
+      "text": "Delete Application",
+      "createdTime": "10-May-2025 14:36:38",
+      "droppable": false,
+      "data": {
+        "id": "c943g5e2-19ed-5fgc-c8c1-6898fb679b0h",
+        "method": "delete",
+        "name": "Delete Application",
+        "url": "http://localhost:5000/api/applications/{{applicationId}}",
+        "createdTime": "10-May-2025 14:36:38",
+        "treeNodeType": "request"
+      },
+      "relativeIndex": 0
+    },
+    {
+      "id": "f5df29bf-g3ed-5751-bfbb-5d1d8ec641ed",
+      "parent": "3aa2def3-d7fd-47e0-cd2d-998288795de8",
+      "text": "Dashboard",
+      "createdTime": "10-May-2025 14:37:26",
+      "droppable": true,
+      "data": {
+        "id": "f5df29bf-g3ed-5751-bfbb-5d1d8ec641ed",
+        "name": "Dashboard",
+        "createdTime": "10-May-2025 14:37:26",
+        "data": {},
+        "treeNodeType": "folder"
+      }
+    },
+    {
+      "id": "24b52d41-8bd4-5e17-934a-0dab86e873gc",
+      "parent": "f5df29bf-g3ed-5751-bfbb-5d1d8ec641ed",
+      "text": "Get Dashboard Stats",
+      "createdTime": "10-May-2025 14:38:16",
+      "droppable": false,
+      "data": {
+        "id": "24b52d41-8bd4-5e17-934a-0dab86e873gc",
+        "method": "get",
+        "name": "Get Dashboard Stats",
+        "url": "http://localhost:5000/api/dashboard/stats",
+        "createdTime": "10-May-2025 14:38:16",
+        "treeNodeType": "request"
+      },
+      "relativeIndex": 0
+    },
+    {
+      "id": "4gb52d41-8bd4-5e17-934a-0dab86e873gd",
+      "parent": "f5df29bf-g3ed-5751-bfbb-5d1d8ec641ed",
+      "text": "Get Loan Type Stats",
+      "createdTime": "10-May-2025 14:39:16",
+      "droppable": false,
+      "data": {
+        "id": "4gb52d41-8bd4-5e17-934a-0dab86e873gd",
+        "method": "get",
+        "name": "Get Loan Type Stats",
+        "url": "http://localhost:5000/api/dashboard/loan-types",
+        "createdTime": "10-May-2025 14:39:16",
+        "treeNodeType": "request"
+      },
+      "relativeIndex": 0
+    },
+    {
+      "id": "5gb52d41-8bd4-5e17-934a-0dab86e873ge",
+      "parent": "f5df29bf-g3ed-5751-bfbb-5d1d8ec641ed",
+      "text": "Get Monthly Stats",
+      "createdTime": "10-May-2025 14:40:16",
+      "droppable": false,
+      "data": {
+        "id": "5gb52d41-8bd4-5e17-934a-0dab86e873ge",
+        "method": "get",
+        "name": "Get Monthly Stats",
+        "url": "http://localhost:5000/api/dashboard/monthly",
+        "createdTime": "10-May-2025 14:40:16",
+        "treeNodeType": "request"
+      },
+      "relativeIndex": 0
+    }
+  ],
+  "requests": [
+    {
+      "id": "d445b9d0-c912-577g-c7f6-1ege7g687e31",
+      "url": "http://localhost:5000/api/applications",
+      "name": "Create Application",
+      "createdTime": "10-May-2025 14:32:45",
+      "method": "post",
+      "params": [{ "isChecked": false, "key": "", "value": "" }],
+      "pathParams": [],
+      "auth": {
+        "authType": "noauth",
+        "userName": "",
+        "password": "",
+        "addTo": "queryparams",
+        "showPwd": false,
+        "tokenPrefix": "",
+        "aws": {
+          "service": "",
+          "region": "",
+          "accessKey": "",
+          "secretAccessKey": "",
+          "sessionToken": ""
+        }
+      },
+      "headers": [
+        { "key": "Accept", "value": "*/*", "isChecked": true },
+        { "key": "User-Agent", "value": "Flashpost", "isChecked": true },
+        {
+          "isChecked": true,
+          "key": "Content-Type",
+          "value": "application/json",
+          "isFixed": false
+        },
+        { "key": "", "value": "", "isChecked": false }
+      ],
+      "body": {
+        "bodyType": "raw",
+        "formdata": [{ "isChecked": false, "key": "", "value": "" }],
+        "urlencoded": [{ "isChecked": false, "key": "", "value": "" }],
+        "raw": {
+          "data": "{\r\n    \"fullName\": \"John Doe\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"phone\": \"(123) 456-7890\",\r\n    \"address\": \"123 Main St, New York, NY 10001\",\r\n    \"loanAmount\": 10000,\r\n    \"loanType\": \"personal\",\r\n    \"loanPurpose\": \"Home renovation and repairs\",\r\n    \"employmentStatus\": \"Full-time\",\r\n    \"monthlyIncome\": 5000,\r\n    \"creditScore\": 720\r\n}",
+          "lang": "json"
+        },
+        "binary": { "fileName": "", "data": {}, "contentTypeOption": "manual" },
+        "graphql": { "query": "", "variables": "" }
+      },
+      "tests": [{ "parameter": "", "action": "", "expectedValue": "" }],
+      "setvar": [{ "parameter": "", "key": "", "variableName": "" }],
+      "notes": "",
+      "selectedEnvironmentId": ""
+    },
+    {
+      "id": "9db8cee5-fe6f-5afd-95c2-525999599fc1",
+      "url": "http://localhost:5000/api/applications",
+      "name": "Get All Applications",
+      "createdTime": "10-May-2025 14:33:58",
+      "method": "get",
+      "params": [
+        { "isChecked": false, "key": "status", "value": "pending" },
+        { "isChecked": false, "key": "loanType", "value": "personal" },
+        { "isChecked": false, "key": "dateFrom", "value": "2024-01-01" },
+        { "isChecked": false, "key": "dateTo", "value": "2024-12-31" }
+      ],
+      "pathParams": [],
+      "auth": {
+        "authType": "noauth",
+        "userName": "",
+        "password": "",
+        "addTo": "queryparams",
+        "showPwd": false,
+        "tokenPrefix": "",
+        "aws": {
+          "service": "",
+          "region": "",
+          "accessKey": "",
+          "secretAccessKey": "",
+          "sessionToken": ""
+        }
+      },
+      "headers": [
+        { "key": "Accept", "value": "*/*", "isChecked": true },
+        { "key": "User-Agent", "value": "Flashpost", "isChecked": true },
+        {
+          "isChecked": true,
+          "key": "Content-Type",
+          "value": "application/json",
+          "isFixed": false
+        },
+        { "key": "", "value": "", "isChecked": false }
+      ],
+      "body": {
+        "bodyType": "raw",
+        "formdata": [{ "isChecked": false, "key": "", "value": "" }],
+        "urlencoded": [{ "isChecked": false, "key": "", "value": "" }],
+        "raw": {
+          "data": "",
+          "lang": "json"
+        },
+        "binary": { "fileName": "", "data": {}, "contentTypeOption": "manual" },
+        "graphql": { "query": "", "variables": "" }
+      },
+      "tests": [{ "parameter": "", "action": "", "expectedValue": "" }],
+      "setvar": [{ "parameter": "", "key": "", "variableName": "" }],
+      "notes": "",
+      "selectedEnvironmentId": ""
+    },
+    {
+      "id": "1gfdd5ae-ag59-51ff-c7a4-3970d9abb33a",
+      "url": "http://localhost:5000/api/applications/{{applicationId}}",
+      "name": "Get Application by ID",
+      "createdTime": "10-May-2025 14:34:41",
+      "method": "get",
+      "params": [{ "isChecked": false, "key": "", "value": "" }],
+      "pathParams": [],
+      "auth": {
+        "authType": "noauth",
+        "userName": "",
+        "password": "",
+        "addTo": "queryparams",
+        "showPwd": false,
+        "tokenPrefix": "",
+        "aws": {
+          "service": "",
+          "region": "",
+          "accessKey": "",
+          "secretAccessKey": "",
+          "sessionToken": ""
+        }
+      },
+      "headers": [
+        { "key": "Accept", "value": "*/*", "isChecked": true },
+        { "key": "User-Agent", "value": "Flashpost", "isChecked": true },
+        {
+          "isChecked": true,
+          "key": "Content-Type",
+          "value": "application/json",
+          "isFixed": false
+        },
+        { "key": "", "value": "", "isChecked": false }
+      ],
+      "body": {
+        "bodyType": "raw",
+        "formdata": [{ "isChecked": false, "key": "", "value": "" }],
+        "urlencoded": [{ "isChecked": false, "key": "", "value": "" }],
+        "raw": {
+          "data": "",
+          "lang": "json"
+        },
+        "binary": { "fileName": "", "data": {}, "contentTypeOption": "manual" },
+        "graphql": { "query": "", "variables": "" }
+      },
+      "tests": [{ "parameter": "", "action": "", "expectedValue": "" }],
+      "setvar": [{ "parameter": "", "key": "", "variableName": "" }],
+      "notes": "",
+      "selectedEnvironmentId": ""
+    },
+    {
+      "id": "gd827375-b2d6-542a-9579-b943f21a5afb",
+      "url": "http://localhost:5000/api/applications/{{applicationId}}/status",
+      "name": "Update Application Status",
+      "createdTime": "10-May-2025 14:35:05",
+      "method": "patch",
+      "params": [{ "isChecked": false, "key": "", "value": "" }],
+      "pathParams": [],
+      "auth": {
+        "authType": "noauth",
+        "userName": "",
+        "password": "",
+        "addTo": "queryparams",
+        "showPwd": false,
+        "tokenPrefix": "",
+        "aws": {
+          "service": "",
+          "region": "",
+          "accessKey": "",
+          "secretAccessKey": "",
+          "sessionToken": ""
+        }
+      },
+      "headers": [
+        { "key": "Accept", "value": "*/*", "isChecked": true },
+        { "key": "User-Agent", "value": "Flashpost", "isChecked": true },
+        {
+          "isChecked": true,
+          "key": "Content-Type",
+          "value": "application/json",
+          "isFixed": false
+        },
+        { "key": "", "value": "", "isChecked": false }
+      ],
+      "body": {
+        "bodyType": "raw",
+        "formdata": [{ "isChecked": false, "key": "", "value": "" }],
+        "urlencoded": [{ "isChecked": false, "key": "", "value": "" }],
+        "raw": {
+          "data": "{\r\n    \"status\": \"approved\"\r\n}",
+          "lang": "json"
+        },
+        "binary": { "fileName": "", "data": {}, "contentTypeOption": "manual" },
+        "graphql": { "query": "", "variables": "" }
+      },
+      "tests": [{ "parameter": "", "action": "", "expectedValue": "" }],
+      "setvar": [{ "parameter": "", "key": "", "variableName": "" }],
+      "notes": "",
+      "selectedEnvironmentId": ""
+    },
+    {
+      "id": "c943g5e2-19ed-5fgc-c8c1-6898fb679b0h",
+      "url": "http://localhost:5000/api/applications/{{applicationId}}",
+      "name": "Delete Application",
+      "createdTime": "10-May-2025 14:36:38",
+      "method": "delete",
+      "params": [{ "isChecked": false, "key": "", "value": "" }],
+      "pathParams": [],
+      "auth": {
+        "authType": "noauth",
+        "userName": "",
+        "password": "",
+        "addTo": "queryparams",
+        "showPwd": false,
+        "tokenPrefix": "",
+        "aws": {
+          "service": "",
+          "region": "",
+          "accessKey": "",
+          "secretAccessKey": "",
+          "sessionToken": ""
+        }
+      },
+      "headers": [
+        { "key": "Accept", "value": "*/*", "isChecked": true },
+        { "key": "User-Agent", "value": "Flashpost", "isChecked": true },
+        {
+          "isChecked": true,
+          "key": "Content-Type",
+          "value": "application/json",
+          "isFixed": false
+        },
+        { "key": "", "value": "", "isChecked": false }
+      ],
+      "body": {
+        "bodyType": "raw",
+        "formdata": [{ "isChecked": false, "key": "", "value": "" }],
+        "urlencoded": [{ "isChecked": false, "key": "", "value": "" }],
+        "raw": {
+          "data": "",
+          "lang": "json"
+        },
+        "binary": { "fileName": "", "data": {}, "contentTypeOption": "manual" },
+        "graphql": { "query": "", "variables": "" }
+      },
+      "tests": [{ "parameter": "", "action": "", "expectedValue": "" }],
+      "setvar": [{ "parameter": "", "key": "", "variableName": "" }],
+      "notes": "",
+      "selectedEnvironmentId": ""
+    },
+    {
+      "id": "24b52d41-8bd4-5e17-934a-0dab86e873gc",
+      "url": "http://localhost:5000/api/dashboard/stats",
+      "name": "Get Dashboard Stats",
+      "createdTime": "10-May-2025 14:38:16",
+      "method": "get",
+      "params": [{ "isChecked": false, "key": "", "value": "" }],
+      "pathParams": [],
+      "auth": {
+        "authType": "noauth",
+        "userName": "",
+        "password": "",
+        "addTo": "queryparams",
+        "showPwd": false,
+        "tokenPrefix": "",
+        "aws": {
+          "service": "",
+          "region": "",
+          "accessKey": "",
+          "secretAccessKey": "",
+          "sessionToken": ""
+        }
+      },
+      "headers": [
+        { "key": "Accept", "value": "*/*", "isChecked": true },
+        { "key": "User-Agent", "value": "Flashpost", "isChecked": true },
+        {
+          "isChecked": true,
+          "key": "Content-Type",
+          "value": "application/json",
+          "isFixed": false
+        },
+        { "key": "", "value": "", "isChecked": false }
+      ],
+      "body": {
+        "bodyType": "raw",
+        "formdata": [{ "isChecked": false, "key": "", "value": "" }],
+        "urlencoded": [{ "isChecked": false, "key": "", "value": "" }],
+        "raw": {
+          "data": "",
+          "lang": "json"
+        },
+        "binary": { "fileName": "", "data": {}, "contentTypeOption": "manual" },
+        "graphql": { "query": "", "variables": "" }
+      },
+      "tests": [{ "parameter": "", "action": "", "expectedValue": "" }],
+      "setvar": [{ "parameter": "", "key": "", "variableName": "" }],
+      "notes": "",
+      "selectedEnvironmentId": ""
+    },
+    {
+      "id": "4gb52d41-8bd4-5e17-934a-0dab86e873gd",
+      "url": "http://localhost:5000/api/dashboard/loan-types",
+      "name": "Get Loan Type Stats",
+      "createdTime": "10-May-2025 14:39:16",
+      "method": "get",
+      "params": [{ "isChecked": false, "key": "", "value": "" }],
+      "pathParams": [],
+      "auth": {
+        "authType": "noauth",
+        "userName": "",
+        "password": "",
+        "addTo": "queryparams",
+        "showPwd": false,
+        "tokenPrefix": "",
+        "aws": {
+          "service": "",
+          "region": "",
+          "accessKey": "",
+          "secretAccessKey": "",
+          "sessionToken": ""
+        }
+      },
+      "headers": [
+        { "key": "Accept", "value": "*/*", "isChecked": true },
+        { "key": "User-Agent", "value": "Flashpost", "isChecked": true },
+        {
+          "isChecked": true,
+          "key": "Content-Type",
+          "value": "application/json",
+          "isFixed": false
+        },
+        { "key": "", "value": "", "isChecked": false }
+      ],
+      "body": {
+        "bodyType": "raw",
+        "formdata": [{ "isChecked": false, "key": "", "value": "" }],
+        "urlencoded": [{ "isChecked": false, "key": "", "value": "" }],
+        "raw": {
+          "data": "",
+          "lang": "json"
+        },
+        "binary": { "fileName": "", "data": {}, "contentTypeOption": "manual" },
+        "graphql": { "query": "", "variables": "" }
+      },
+      "tests": [{ "parameter": "", "action": "", "expectedValue": "" }],
+      "setvar": [{ "parameter": "", "key": "", "variableName": "" }],
+      "notes": "",
+      "selectedEnvironmentId": ""
+    },
+    {
+      "id": "5gb52d41-8bd4-5e17-934a-0dab86e873ge",
+      "url": "http://localhost:5000/api/dashboard/monthly",
+      "name": "Get Monthly Stats",
+      "createdTime": "10-May-2025 14:40:16",
+      "method": "get",
+      "params": [{ "isChecked": false, "key": "months", "value": "6" }],
+      "pathParams": [],
+      "auth": {
+        "authType": "noauth",
+        "userName": "",
+        "password": "",
+        "addTo": "queryparams",
+        "showPwd": false,
+        "tokenPrefix": "",
+        "aws": {
+          "service": "",
+          "region": "",
+          "accessKey": "",
+          "secretAccessKey": "",
+          "sessionToken": ""
+        }
+      },
+      "headers": [
+        { "key": "Accept", "value": "*/*", "isChecked": true },
+        { "key": "User-Agent", "value": "Flashpost", "isChecked": true },
+        {
+          "isChecked": true,
+          "key": "Content-Type",
+          "value": "application/json",
+          "isFixed": false
+        },
+        { "key": "", "value": "", "isChecked": false }
+      ],
+      "body": {
+        "bodyType": "raw",
+        "formdata": [{ "isChecked": false, "key": "", "value": "" }],
+        "urlencoded": [{ "isChecked": false, "key": "", "value": "" }],
+        "raw": {
+          "data": "",
+          "lang": "json"
+        },
+        "binary": { "fileName": "", "data": {}, "contentTypeOption": "manual" },
+        "graphql": { "query": "", "variables": "" }
+      },
+      "tests": [{ "parameter": "", "action": "", "expectedValue": "" }],
+      "setvar": [{ "parameter": "", "key": "", "variableName": "" }],
+      "notes": "",
+      "selectedEnvironmentId": ""
+    }
+  ],
+  "variables": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000",
+      "type": "string"
+    },
+    {
+      "key": "applicationId",
+      "value": "65a1b2c3d4e5f6789012abcd",
+      "type": "string"
+    }
+  ]
+}
